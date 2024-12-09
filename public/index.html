@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="email"
+                required style="font-family: Arial, Helvetica, sans-serif;"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="Password"
+                class="password"
+                style="font-family: Arial, Helvetica, sans-serif;"
+                required
+              />
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn btn1">
+              <input type="submit" value="Login" class="btn-layer" />
+            </div>
+            <div class="field btn btn3">
+              <div class="btn-layer2 google-layer"></div>
+              <img
+                src="images/7123025_logo_google_g_icon.svg"
+                alt=""
+                width="50px"
+                height="50px"
+              />
+              <input
+                type="submit"
+                value="Login With Google"
+                class="Google-inp"
+              />
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+            </div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="email2"
+                required
+                style="font-family: Arial, Helvetica, sans-serif;"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="pass2"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="Confirm password"
+                class="pass3"
+                required
+                
+              />
+            </div>
+            <div class="field btn btn2">
+              <input type="button" value="Signup" class="btn-layer" />
+            </div>
+            <div class="login-link">
+              Have an account? <a href="">Login now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="snackbar" style="font-family: Arial, Helvetica, sans-serif;">Some text some message..</div>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>
